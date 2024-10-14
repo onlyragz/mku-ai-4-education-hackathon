@@ -94,6 +94,13 @@ Run the following comand to ensure that you are working on your branch. It shoul
 git branch
 ```
 
+### Create your working directory
+Create your working directory with the same name as your-github-username and navigate to it. You can use the following command while replacin it with your actual GitHub username:
+```bash
+mkdir your-github-username && cd your-github-username
+```
+- Make sure that all your work is in the directory you have just created.
+
 ### Tracking and Committing Changes
 Track the changes you make and commit them with a meaningful commit message:
 1. Track changes:
