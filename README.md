@@ -146,4 +146,7 @@ Your projects will be evaluated based on the following criteria:
   - The impact of your solution on education.
   - Demo
 
+## Resources
+- [Keynote Slides](https://docs.google.com/presentation/d/1rZpK2aX-TwNKWzMUBVHOk1ZSuZi1iOCY9cJNlefQMpM/edit?usp=sharing)
+
 Good luck, and happy coding! We can’t wait to see your innovative AI for education solutions!
