@@ -101,6 +101,15 @@ mkdir your-github-username && cd your-github-username
 ```
 - Make sure that all your work is in the directory you have just created.
 
+### Create a virtual environment
+Use the following command on Linux or MacOS. If you are on windows you can find alternatives on your own
+```bash
+python -m venv .venv
+```
+Activate the virtual environment
+```bash
+source .venv/bin/activate
+```
 ### Tracking and Committing Changes
 Track the changes you make and commit them with a meaningful commit message:
 1. Track changes:
