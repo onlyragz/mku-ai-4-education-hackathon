@@ -1,0 +1,40 @@
+.main {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.head h1 {
+    font-size: 3.5rem;
+}
+
+.desc {
+    text-align: center;
+}
+
+.desc p {
+    line-height: 2rem;
+}
+
+.button button {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    height: 3rem;
+    padding: 0 5rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: .3rem;
+
+}
+
+.btn a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(184, 184, 184);
+}

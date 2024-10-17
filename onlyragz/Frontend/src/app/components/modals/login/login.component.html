@@ -1,0 +1,74 @@
+<div class="login-container" *ngIf="isLogin && !newUser">
+    <div class="login-form">
+        <form #loginform="ngForm" (ngSubmit)="submitLogin()">
+            <div class="form-title">
+                <h1>Welcome!</h1>
+                <p>New user? <a href="#" (click)="toggleForm($event)">Sign up here</a></p>
+            </div>
+
+            <div class="input-details">
+                <input type="email" placeholder="Enter your email" required name="email" [(ngModel)]="login_form.email">
+                <div class="input">
+                    <input [type]="password_type" placeholder="Password" required name="password" [(ngModel)]="login_form.password">
+                    <span (click)="togglePassword()" class="toggle-pass"><i [class]="show"></i></span>
+                </div>
+            </div>
+
+            <div class="extras">
+                <div class="remember">
+                    <input type="radio" name="remember" id="">
+                    <label for="remember">remember me</label>
+                </div>
+
+                <div class="forgot">
+                    <a routerLink="">forgot password?</a>
+                </div>
+            </div>
+
+            <div class="button">
+                <button [disabled]="!loginform.valid"><app-loader size="25px" *ngIf="isLoading"></app-loader><p *ngIf="!isLoading">Log in</p></button>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="login-container" *ngIf="!isLogin && !newUser">
+    <div class="login-form">
+        <form #myForm="ngForm" (ngSubmit)="submitSignup()">
+            <div class="form-title">
+                <h1>Sign up</h1>
+                <p>Have an account? <a href="#" (click)="toggleForm($event)">login</a></p>
+            </div>
+
+            <div class="input-details">
+                <input type="text" placeholder="First name" required name="firstname" [(ngModel)]="signup_form.firstname">
+                <input type="text" placeholder="Last name" required name="lastname" [(ngModel)]="signup_form.lastname">
+                <input type="text" placeholder="Phone number" required name="phone" [(ngModel)]="signup_form.phone">
+                <input type="email" placeholder="Email" required name="email" [(ngModel)]="signup_form.email">
+                <div class="input">
+                    <input type="password" placeholder="Password" required name="password" [(ngModel)]="signup_form.password">
+                    <span class="toggle-pass"><i class="fi fi-rr-eye"></i></span>
+                </div>
+                <input type="password" placeholder="Confirm password" required name="cpassword" [(ngModel)]="signup_form.cpassword">
+            </div>
+
+            <div class="extras">
+                <div class="remember">
+                    <input type="radio" name="remember" id="">
+                    <label for="remember">remember me</label>
+                </div>
+
+                <div class="forgot">
+                    <a routerLink="">forgot password?</a>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit" ><app-loader size="25px" *ngIf="isLoading"></app-loader><p *ngIf="!isLoading">sign up</p></button>
+            </div>
+
+        </form>
+    </div>
+</div>

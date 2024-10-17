@@ -1,0 +1,28 @@
+p, span {
+    font-size: 14px;
+    white-space: nowrap;
+    color: white;
+}
+
+.modal {
+    background-color: rgb(222, 0, 0);
+    padding: 1rem;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem;
+}
+
+.overlay-dialog {
+    z-index: 999; /* Use a value lower than the fixed header z-index */
+    /* Add other styles as needed */
+}
+
+@media screen and (max-width:450px) {
+    p, span {
+        font-size: 12px;
+    }
+}

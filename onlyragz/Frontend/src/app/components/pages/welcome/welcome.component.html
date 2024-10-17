@@ -1,0 +1,52 @@
+<div class="main">
+    <div class="sub">
+        @if (user) {
+            <div class="hi">
+                <h1>Hello, {{user.name}}</h1>
+            </div>
+
+            <div class="qu">
+                <p>We have a few questions for you before we get started.</p>
+            </div>
+
+            <div class="button">
+                <button (click)="getQuestions()">
+                    Let's go!
+                </button>
+            </div>
+        }
+
+        @if (que) {
+            @for (que of que; track $index) {
+                <div class="questions">
+                    <div class="number">
+                        <span>{{page}}</span>
+                    </div>
+    
+                    <div class="question">
+                        <h1>{{que.question}}</h1>
+                    </div>
+    
+                    <div class="option">
+                        @for (option of que.options; track $index) {
+                            <div class="opt">
+                                <input type="radio">
+                                <label for="">{{option.option}}</label>
+                            </div>
+                        }
+                    </div>
+
+                    @if (page_number == 6) {
+                        <div class="button">
+                            <button routerLink="/dash">Finish</button>
+                        </div>
+                    } @else {
+                        <div class="button">
+                            <button (click)="getQuestions()">Next</button>
+                        </div>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>

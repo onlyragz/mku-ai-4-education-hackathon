@@ -1,0 +1,66 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.sub {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hi h1 {
+    font-size: 4rem;
+}
+
+.button button {
+    height: 4rem;
+    padding: 0 3rem;
+    font-size: 14px;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.question h1 {
+    font-size: 3rem;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+}
+
+.opt label {
+    font-size: 1.2rem;
+}
+
